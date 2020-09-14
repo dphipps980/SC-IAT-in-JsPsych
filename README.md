@@ -12,7 +12,7 @@ The experiment posted here has several additions:
 
 
 How to Run
-1. Upload all the files to the public directory of a server that allows for PHP and Javascript. E.g. Byethost.
+1. Change references in HTML files from "YOURSERVER" to your actual server name, then upload all the files to the public directory of the server (Note the server must allow for PHP and Javascript. E.g. Byethost.)
 2. Create a folder in the public directory called "data"
 3. Give the newly created "data" folder and the iatphp.php file full read, write, and executive permissions (777).
 4. To run the experiment, open the link www.yourserver.com/Device.html Data will save into the folder called data.
