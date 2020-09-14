@@ -11,3 +11,9 @@ The experiment posted here has several additions:
 
 
 
+How to Run
+1. Upload all the files to the public directory of a server that allows for PHP and Javascript. E.g. Byethost.
+2. Create a folder in the public directory called "data"
+3. Give the newly created "data" folder and the writeiat.php file full read, write, and executive permissions (777).
+4. To run the experiment, open the link www.yourserver.com/Device.html Data will save into the folder called data.
+5. Upon completion, a tab will open with google searching whatever you put as your subject ID. In the code google can be replaced with a link to Qualtrics or Limesurvey to carry over subject ID into a survey. 
