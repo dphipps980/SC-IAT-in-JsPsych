@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+	<title>Ethics</title>
+	<script src="js/jspsych.js"></script>
+	<script src="js/plugins/jspsych-html-keyboard-response.js"></script>
+	<script src="js/plugins/jspsych-iat-html.js"></script>
+	<script src="js/plugins/jspsych-survey-text.js"></script>
+	<script src="js/plugins/jspsych-call-function.js"></script>
+	<script src="js/plugins/jspsych-instructions.js"></script>
+	<script src="js/plugins/jspsych-keen-ping.js"></script>
+
+	<script src="js/keenio-credentials.js"></script>
+	<link href="css/jspsych.css" rel="stylesheet" type="text/css"></link>	
+	</head>
+	
+	
+	<script>
+	var inductive_text = {
+		type: 'instructions',
+		pages: [
+			'<b>School of Applied Psychology, Griffith University </b><br></br> Ethics Ref: GU2020/669 <br></br><b>Participant Information Sheet</b><br></br>'
+			+ '<b>Title of Project:</b> Predicting Snacking in Undergraduate Students <br></br>'
+			+ '<br></br> You are being asked to help with some research. Please read this information before beginning. <br></br>'
+			+ 'Aim: We aim to what motivates and predicts snacking behaviour. <br></br>'
+			+ '<b>What does being a participant involve?</b>'
+			+ 'For time one, you will be given an online survey that will take about 20 minutes to complete. First, you will be given a survey. Then, you will be given a computerised word association task.. The survey has many questions about your opinions on snacking. The purpose of the current study is to monitor your current behaviour, and you will not be asked to change you current snacking behaviours as part of this study. In a week you will be asked to complete a follow-up online survey. You will receive course credit for both the baseline (.5 Credit), and the follow-up survey (.5 Credits).<br></br>' 
+			+ '<b>Why is this Research Important?</b><br></br>'
+			+'This research will not directly benefit you but will help researchers understand more about snacking behaviour. The results of this research may help inform future research and health interventions.<br></br>'
+			+'<b>What are the Risks?</b><br></br>'
+			+'There are also no foreseeable risks associated with participation in this research. However, if you free to withdraw at any time without question. Should you experience any discomfort due to participation in this research, Beyond Blue (1300 22 4636) offer a free 24 hour telephone support and advice services.<br></br>'
+			+'<b>What happens to your information?</b><br></br>'
+			+'The conduct of this research involves the collection, access, storage and/or use of your identified personal information. The information collected is confidential and will not be disclosed to third parties without your consent, except to meet government, legal or other regulatory authority requirements. A de-identified copy of this data may be used for other research purposes, including publishing openly (e.g. in an open access repository). However, your anonymity will at all times be safeguarded. For further information consult the Universitys Privacy Plan at http://www.griffith.edu.au/about-griffith/plans-publications/griffith-university-privacy-plan or telephone (07) 3735 4375. <br></br>'
+			+ 'The researchers will have to make a report about what they find but your name and specific answers will remain confidential. The survey is being conducted using the Qualtrics and Inquisit platforms which is based in the U.S.A. Information you provide on this survey will be transferred to a password protected Griffith University OneDrive and stored for 5 years before being destroyed. As part of our commitment to open science, deidentified data will be stored on the Open Science Framework servers in the U.S.A, and may be accessed by other scientists (e.g. for verification purposes) with permission of the research team. By completing this survey you agree to this transfer.<br></br>'
+			+'If you have any questions please feel free to contact the researchers on the email address below. If you are happy to participate, please continue. Otherwise, please inform the researcher. If you would like to access a summary of the results after data collection is complete, please email the research team.<br></br>'
+			+'Ethical conduct of the project: Griffith University conducts research in accordance with the National Statement on Ethical Conduct in Human Research. If you or your child has any concerns or complaints about the ethical conduct of the project, you may contact the Manager, Research Ethics on 3735 4375 or research-ethics@griffith.edu.au.<br></br>'
+			+'<b>Researchers:</b> Researchers: Dr. Kyra Hamilton, Mr Thomas Hannon, and Mr Daniel Phipps<br></br>'
+			+'<b>Email:</b> kyra.hamilton@griffith.edu.au; daniel.phipps@griffithuni.edu.au; Thomas.hannon@griffithuni.edu.au<br></br>'
+			+'<br></br>If you conset to participate, please continue'
+		],
+		show_clickable_nav: true
+	};
+	
+	var person = prompt("Please enter your student number. Do not include the s", "");
+	
+	if (person == "") {
+		var person = Math.floor(Math.random() * 1000) + 1
+		}
+	if (person == null) {
+		var person = Math.floor(Math.random() * 1000) + 1
+		}
+		
+	var timeline = [];
+	timeline.push(inductive_text);
+	
+	var rand = Math.floor(Math.random() * 2) + 1
+	
+	if (rand == 1) {
+		var redirecter = "http://dphipps.byethost11.com/AffSnack1.html?subject="+person
+		} else {
+		var redirecter = "http://dphipps.byethost11.com/InsSnack1.html?subject="+person
+		}
+	
+	
+	
+	jsPsych.init({
+		timeline: timeline,
+		on_finish: function() {
+			window.location.replace(redirecter);
+		}
+	});
+	
+    </script>
+</html>
+
