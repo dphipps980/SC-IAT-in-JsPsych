@@ -1,6 +1,6 @@
 # SC-IAT-in-JsPsych
 
-An example of an SC-IAT in Js-Psych 5 based on other examples posted previously by Nathan Parkin in Google groups here: https://groups.google.com/g/jspsych/c/3-YrE1upPqM/m/qXE5OCLXAQAJ
+An example of an single catagory Implicit association test (SC-IAT) in Js-Psych 5 based on other examples posted previously by Nathan Parkin in Google groups here: https://groups.google.com/g/jspsych/c/3-YrE1upPqM/m/qXE5OCLXAQAJ
 
 The experiment posted here has several additions:
 
