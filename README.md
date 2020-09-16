@@ -29,3 +29,6 @@ The example experiment will completes the following steps:
 4. Randomise participants to recieve one of two SC-IATs
 5. Redirect participants to the other SC-IAT once they have completed the first one, while retaining the original subject ID
 6. Redirect participants to another website after ending, with the ability to retain the original subject ID. 
+
+Citable on Zenodo as:
+D. J. Phipps. (2020). An SC-IAT in JsPsych. Zenodo. http://doi.org/10.5281/zenodo.4028223
