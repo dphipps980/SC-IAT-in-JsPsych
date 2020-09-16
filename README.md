@@ -31,4 +31,5 @@ The example experiment will completes the following steps:
 6. Redirect participants to another website after ending, with the ability to retain the original subject ID. 
 
 Citable on Zenodo as:
+
 D. J. Phipps. (2020). An SC-IAT in JsPsych. Zenodo. http://doi.org/10.5281/zenodo.4028223
