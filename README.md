@@ -17,8 +17,9 @@ How to Run
 1. Change references in HTML files from "YOURSERVER" to your actual server name, then upload all the files to the public directory of the server (Note the server must allow for PHP and Javascript. E.g. Byethost.)
 2. Create a folder in the public directory called "data"
 3. Give the newly created "data" folder and the iatphp.php file full read, write, and executive permissions (777).
-4. To run the experiment, open the link www.yourserver.com/Device.html Data will save into the folder called data.
-5. Upon completion, a tab will open with google searching whatever you put as your subject ID. In the code google can be replaced with a link to Qualtrics or Limesurvey to carry over subject ID into a survey. 
+4. Restrict access to the "data" folder using a .htacess file. This is most easily done using C-Panel or equivilant software on your host server.
+5. To run the experiment, open the link www.yourserver.com/Device.html Data will save into the folder called data.
+6. Upon completion, a tab will open with google searching whatever you put as your subject ID. In the code google can be replaced with a link to Qualtrics or Limesurvey to carry over subject ID into a survey. 
 
 
 The example experiment will completes the following steps:
