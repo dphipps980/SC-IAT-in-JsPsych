@@ -30,7 +30,7 @@ The example experiment will completes the following steps:
 5. Redirect participants to the other SC-IAT once they have completed the first one, while retaining the original subject ID
 6. Redirect participants to another website after ending, with the ability to retain the original subject ID. 
 
-You can view a worked example at https://dphipps980.github.io/SC-IAT-in-JsPsych/
+You can view a worked example at https://dphipps980.github.io/SC-IAT-in-JsPsych/Device.html
 
 
 Citable on Zenodo as:
