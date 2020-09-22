@@ -17,14 +17,17 @@
 		type: 'instructions',
 		pages: [
 			'<b>ETHICS AND INFORMATION </b><br></br>'
-			+ '<b>Title of Project:</b> Example <br></br>'
-			+ '<br></br> You are being asked to help with some research. Please read this information before beginning. <br></br>'
+			+ '<b>Title of Project:</b> A Worked Example of a SC-IAT in Js-Psych <br></br>'
+			+ '<br></br> This will run a two SC-IATs in jsPsych, based on code publically available at: <br></br>'
+			+ 'https://github.com/dphipps980/SC-IAT-in-JsPsych<br></br>'
+			+ 'No data will be saved, and at the conclusion of the experiment, you will be redirected to a Google search of your name!<br></br>'
+			+ 'This is just to show that in a real experiment, you can port subject IDs entered here into survey software like Qualtrics or Survey Monkey <br></br>'
 			
 		],
 		show_clickable_nav: true
 	};
 	
-	var person = prompt("Please enter your student number. Do not include the s", "");
+	var person = prompt("Please your name. In a real experimnent you might ask for a subject ID here. It will carry thought the experiment", "");
 	
 	if (person == "") {
 		var person = Math.floor(Math.random() * 1000) + 1
