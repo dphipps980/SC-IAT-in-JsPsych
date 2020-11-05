@@ -15,8 +15,7 @@ The experiment posted here has several additions:
 
 How to Run
 1. Change references in HTML files from "YOURSERVER" to your actual server name, then upload all the files to the public directory of the server 
-
-       - Note: There are several hosting services that allow free use. Any server used must must be able to run PHP and Javascript and allow for files to have public writing permissions(ChMod777). I have used Byethost successfully, while sites like 000Webhosting do not allow adequete permissions. 
+       Note: There are several hosting services that allow free use. Any server used must must be able to run PHP and Javascript and allow for files to have public writing permissions(ChMod777). I have used Byethost successfully, while sites like 000Webhosting do not allow adequete permissions. 
 2. Create a folder in the public directory called "data"
 3. Give the newly created "data" folder and the iatphp.php file full read, write, and executive permissions (777).
 4. Restrict access to the "data" folder using a .htacess file. This is most easily done using C-Panel or equivilant software on your host server.
