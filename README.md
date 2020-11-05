@@ -14,7 +14,7 @@ The experiment posted here has several additions:
 
 
 How to Run
-1. Change references in HTML files from "YOURSERVER" to your actual server name, then upload all the files to the public directory of the server (Note the server must allow for PHP and Javascript. E.g. Byethost.)
+1. Change references in HTML files from "YOURSERVER" to your actual server name, then upload all the files to the public directory of the server. If you do not own a server or website, there are several hosting services that allow free use. Any server used must must be able to run PHP and Javascript and allow for files to have public writing permissions (chmod777). I have used Byethost successfully, while sites like 000Webhosting do not allow adequete permissions. 
 2. Create a folder in the public directory called "data"
 3. Give the newly created "data" folder and the iatphp.php file full read, write, and executive permissions (777).
 4. Restrict access to the "data" folder using a .htacess file. This is most easily done using C-Panel or equivilant software on your host server.
@@ -29,6 +29,9 @@ The example experiment will completes the following steps:
 4. Randomise participants to recieve one of two SC-IATs
 5. Redirect participants to the other SC-IAT once they have completed the first one, while retaining the original subject ID
 6. Redirect participants to another website after ending, with the ability to retain the original subject ID. 
+
+You can view a worked example at https://dphipps980.github.io/SC-IAT-in-JsPsych/Device.html
+
 
 Citable on Zenodo as:
 

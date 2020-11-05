@@ -52,11 +52,11 @@
 	
 	
 	/* define instructions block */
-    var instructions = 
+    var instructions0 = 
 	{
         type: "text"
-		,data:{trial_name: 'instructions'}
-        ,text: '<p class ="left-side-begin">Positive<br>OR</br>Snacks</p>'
+		,data:{trial_name: 'instructions0'}
+        ,text: '<p class ="left-side-begin">Positive</p>'
 				+'<p class ="right-side-begin">Negative</p>'
 				+ '<p class="instructions"><br></br>Words representing the categories at the top will appear one-by-one in the middle of the screen.'
 				+ '<br></br>When the item belongs to a category on the left, press the E key'
@@ -66,7 +66,27 @@
 		,timing_post_trial: 2000
 		,cont_key: ['space']
 	};
-	
+    var instructions = 
+	{
+        type: "text"
+		,data:{trial_name: 'instructions'}
+        ,text: '<p class ="left-side-begin">Positive<br>OR</br>Snacks</p>'
+				+'<p class ="right-side-begin">Negative</p>'
+				+ '<p class="instructions"><br></br>Note: There are now THREE Catagories.'
+				+ '<br></br> Words representing the categories at the top will appear one-by-one in the middle of the screen.'
+				+ '<br></br>When the item belongs to a category on the left, press the E key'
+				+ '<br></br>When the item belongs to a category on the right, press the P key.'
+				+ '<br></br>Items belong to only one category. If you make an error, an X will appear.'
+				+'<br></br>Press the space bar to continue.</p>'
+		,timing_post_trial: 2000
+		,cont_key: ['space']
+		,on_trial_start: function()
+		{
+			$('div.left-side').empty();
+			$('div.right-side').empty();
+		}
+	};
+		
 	/* define instructions2 block */
 	var instructions2 = 
 	{
@@ -113,7 +133,7 @@
 		,{stimulus: '<p class="IAT-stimuli"; style="font-size: 35px">Snacks</p>', is_html:true, key_answer: 69}
 		,{stimulus: '<p class="IAT-stimuli"; style="font-size: 35px">Chips</p>', is_html:true, key_answer: 69}
 	];
-	var im1 = jsPsych.randomization.sample(images_and_words1,7,true);
+	var im1 = jsPsych.randomization.sample(images_and_words1,10,true);
 	
 	var images_and_words2 =
 	[	
@@ -131,7 +151,7 @@
 		,{stimulus: '<p class="IAT-stimuli"; style="color: green; font-size: 35px">Harmful</p>', is_html:true, key_answer: 80}
 		,{stimulus: '<p class="IAT-stimuli"; style="color: green; font-size: 35px">Worthless</p>', is_html:true, key_answer: 80}
 	];
-	var im3 = jsPsych.randomization.sample(images_and_words3,10,true);
+	var im3 = jsPsych.randomization.sample(images_and_words3,7,true);
 		
 	/* block 3 and 4 images and/or words change */
 	var images_and_words4 =
@@ -143,13 +163,17 @@
 		,{stimulus: '<p class="IAT-stimuli"; style="font-size: 35px">Chips</p>', is_html:true, key_answer: 69}
 	];
 	
-	var im4 = jsPsych.randomization.sample(images_and_words4,7,true);
-	var im5 = jsPsych.randomization.sample(images_and_words2,10,true);
+	var im4 = jsPsych.randomization.sample(images_and_words4,10,true);
+	var im5 = jsPsych.randomization.sample(images_and_words2,7,true);
 	var im6 = jsPsych.randomization.sample(images_and_words3,7,true);
 	
 	/* =============RANDOMIZATION OF STIMULI IN BLOCKS================== */
 	
 	/* practice trial stimuli randomization */
+	var block0 = im2.concat(im3)
+	var block0_stimuli = jsPsych.randomization.repeat(block0,1)
+
+	
 	var block1and2 = im1.concat(im2,im3);
 	var practice_trial_stimuli = jsPsych.randomization.repeat(block1and2,1);
 	
@@ -168,6 +192,23 @@
 	/* =================DEFINE BLOCKS================= */
 	
 	/* define practice trial block */
+	var familiarity_trial =
+	{
+		type: 'IAT'
+		,choices: ['E','P']
+		,data:{trial_name: 'familiarity'}
+		,timing_post_trial: post_trial_gap
+		,timing_feedback_duration: 150
+		,force_correct_button_press: false
+		,timing_response: 1500
+		,timeline: block0_stimuli
+		,left_target: '<p>Positive</p>'
+		,right_target: '<p>Negative</p>'
+	
+	};
+		
+
+	
 	var practice_trial =
 	{
 		type: 'IAT'
@@ -233,8 +274,7 @@
 	{
 		type: "text"
 		,data:{trial_name: 'debrief'}
-        ,text:'<p class = "instructions">You will now be redirected to a Google search of your name!'
-		+'<br><br/> Press the space bar to close this window</p>'
+        ,text:'<p class = "instructions">Please press the space-bar key to move onto the second word association task </p>'
 		,on_trial_start: function()
 			{
 				$('div.left-side').empty();
@@ -256,6 +296,8 @@
 	/* create experiment timeline array */
 	var timeline = [];
 	timeline.push(intro)
+	timeline.push(instructions0);
+	timeline.push(familiarity_trial);
 	timeline.push(instructions);
 	timeline.push(practice_trial);
 	timeline.push(instructions2);
@@ -264,6 +306,7 @@
 	timeline.push(rev_practice_trial);
 	timeline.push(instructions2);
 	timeline.push(rev_full_trial);
+	
 	
 	/* write to server */
 	function saveData(filename, filedata)
@@ -275,6 +318,7 @@
       data: {filename: filename, filedata: filedata}
    });
 	}
+
 
 		
 	/* grab data before the end of the experiment */

@@ -9,6 +9,9 @@
 	<script src="jsPsych/js/plugins/jspsych-call-function.js"></script>
 	<script src="jsPsych/js/plugins/jspsych-instructions.js"></script>
 	<script src="jsPsych/js/plugins/jspsych-keen-ping.js"></script>
+
+	<script src="js/keenio-credentials.js"></script>
+	<link href="css/jspsych.css" rel="stylesheet" type="text/css"></link>	
 	</head>
 	
 	
@@ -17,17 +20,14 @@
 		type: 'instructions',
 		pages: [
 			'<b>ETHICS AND INFORMATION </b><br></br>'
-			+ '<b>Title of Project:</b> A Worked Example of a SC-IAT in Js-Psych <br></br>'
-			+ '<br></br> This will run a two SC-IATs in jsPsych, based on code publically available at: <br></br>'
-			+ 'https://github.com/dphipps980/SC-IAT-in-JsPsych<br></br>'
-			+ 'No data will be saved, and at the conclusion of the experiment, you will be redirected to a Google search of your name!<br></br>'
-			+ 'This is just to show that in a real experiment, you can port subject IDs entered here into survey software like Qualtrics or Survey Monkey <br></br>'
+			+ '<b>Title of Project:</b> Example <br></br>'
+			+ '<br></br> You are being asked to help with some research. Please read this information before beginning. <br></br>'
 			
 		],
 		show_clickable_nav: true
 	};
 	
-	var person = prompt("Please your name. In a real experimnent you might ask for a subject ID here. It will carry thought the experiment", "");
+	var person = prompt("Please enter your student number. Do not include the s", "");
 	
 	if (person == "") {
 		var person = Math.floor(Math.random() * 1000) + 1
@@ -42,9 +42,9 @@
 	var rand = Math.floor(Math.random() * 2) + 1
 	
 	if (rand == 1) {
-		var redirecter = "https://dphipps980.github.io/SC-IAT-in-JsPsych/AffSnack1.html?subject="+person
+		var redirecter = "http://YOURSERVER.com/AffSnack1.html?subject="+person
 		} else {
-		var redirecter = "https://dphipps980.github.io/SC-IAT-in-JsPsych/InsSnack1.html?subject="+person
+		var redirecter = "http://YOURSERVER.com/InsSnack1.html?subject="+person
 		}
 	
 	
