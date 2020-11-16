@@ -132,7 +132,7 @@
 		,{stimulus: '<p class="IAT-stimuli"; style="font-size: 35px">Snacks</p>', is_html:true, key_answer: 69}
 		,{stimulus: '<p class="IAT-stimuli"; style="font-size: 35px">Chips</p>', is_html:true, key_answer: 69}
 	];
-	var im1 = jsPsych.randomization.sample(images_and_words1,10,true);
+	var im1 = jsPsych.randomization.sample(images_and_words1,7,true);
 	
 	var images_and_words2 =
 	[	
@@ -150,7 +150,7 @@
 		,{stimulus: '<p class="IAT-stimuli"; style="color: green; font-size: 35px">Nasty</p>', is_html:true, key_answer: 80}
 		,{stimulus: '<p class="IAT-stimuli"; style="color: green; font-size: 35px">Bland</p>', is_html:true, key_answer: 80}
 	];
-	var im3 = jsPsych.randomization.sample(images_and_words3,7,true);
+	var im3 = jsPsych.randomization.sample(images_and_words3,10,true);
 		
 	/* block 3 and 4 images and/or words change */
 	var images_and_words4 =
@@ -162,8 +162,8 @@
 		,{stimulus: '<p class="IAT-stimuli"; style="font-size: 35px">Chips</p>', is_html:true, key_answer: 80}
 	];
 	
-	var im4 = jsPsych.randomization.sample(images_and_words4,10,true);
-	var im5 = jsPsych.randomization.sample(images_and_words2,7,true);
+	var im4 = jsPsych.randomization.sample(images_and_words4,7,true);
+	var im5 = jsPsych.randomization.sample(images_and_words2,10,true);
 	var im6 = jsPsych.randomization.sample(images_and_words3,7,true);
 	
 	/* =============RANDOMIZATION OF STIMULI IN BLOCKS================== */
