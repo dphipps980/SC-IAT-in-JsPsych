@@ -274,7 +274,10 @@
 	{
 		type: "text"
 		,data:{trial_name: 'debrief'}
-        ,text:'<p class = "instructions">Please press the space-bar key to move onto the second word association task </p>'
+        ,text:'<p class = "instructions"> If you completed this IAT on Github, you will now be refered to google.com, with a search using the ID you entered <br>'
+		+ 'This function can be used to retain subject IDs when transfering between the SC-IAT and survey software like Qualtrics or LimeSurvey.'
+		+ '<br></br>No Data has been recorded.'
+		+ '<br></br>Please press the space-bar key to move on.  </p>'
 		,on_trial_start: function()
 			{
 				$('div.left-side').empty();
