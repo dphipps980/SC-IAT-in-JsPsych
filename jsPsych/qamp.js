@@ -133,7 +133,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			fixationDuration : -1, //It means that by default we do not use fixation.
 			primeDuration : 100, 
 			postPrimeDuration : 100, //Duration of blank screen between prime and target.
-			targetDuration : 150, //Duration of target presentation.
+			targetDuration : 200, //Duration of target presentation.
 			showRatingDuration : 300, //In the 7-responses option, for how long to show the selected rating.
 			ITI : 250, //Duration between trials.
 			
@@ -1049,7 +1049,6 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			retText = retText.replace(/targetCat/g, piCurrent.targetCat);
 			retText = retText.replace(/negativeAdj/g, piCurrent.sortingLabel2.toLowerCase());
 			retText = retText.replace(/positiveAdj/g, piCurrent.sortingLabel1.toLowerCase());
-			retText = retText.replace(/nBlocks/g, piCurrent.nBlocks);
 			retText = retText.replace(/blockNum/g, params.blockNum);
 			return retText;
 		}
