@@ -13,7 +13,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/qamp.j
 				    {word : 'exercise'}, 
 					{word : 'workout'}, 
 					{word : 'running'}, 
-					{word : 'active'}]
+					{word : 'physical activity'}]
 
 			}, 
 			{
