@@ -37,7 +37,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
 		},
 		base_url : {//Where are your images at?
-		image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/'
+		image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/',
+		image : 'https://baranan.github.io/minno-tasks/images/ampImages'
 		}
 	});
 });
