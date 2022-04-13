@@ -6,8 +6,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	return ampExtension({
 		primeCats :  [
 			{
-				nameForFeedback : 'Physical Activity',  //Will be used in the user feedback 
-				nameForLogging : 'Physical Activity', //Will be used in the logging
+				nameForFeedback : 'Snacks',  //Will be used in the user feedback 
+				nameForLogging : 'Snacks', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
 				    {word : 'Chocolate'}, 
@@ -18,8 +18,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 
 			}, 
 			{
-				nameForFeedback : 'Sedentary Behaviour',  //Will be used in the user feedback 
-				nameForLogging : 'Sedentary Behaviour', //Will be used in the logging
+				nameForFeedback : 'Fruit',  //Will be used in the user feedback 
+				nameForLogging : 'Fruit', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
 				    {word : 'Banana'}, 
