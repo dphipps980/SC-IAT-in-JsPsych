@@ -6,18 +6,18 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	return ampExtension({
 		primeCats :  [
 			{
-				nameForFeedback : 'Snacks',  //Will be used in the user feedback 
-				nameForLogging : 'Snacks', //Will be used in the logging
+				nameForFeedback : 'Sugar',  //Will be used in the user feedback 
+				nameForLogging : 'Sugar', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
 				    {word : 'Lollies'}, 
-                    {word : 'Chocolate'}, 
-                    {word : 'Ice cream'}, 
-                    {word : 'Cake'}, 
-                    {word : 'Coke'}, 
-                    {word : 'Candy'}, 
-                    {word : 'Soft-drink'}, 
-					{word : 'Sweets'}]
+				    {word : 'Chocolate'}, 
+				    {word : 'Ice cream'}, 
+				    {word : 'Cake'}, 
+				    {word : 'Coke'}, 
+				    {word : 'Candy'}, 
+				    {word : 'Soft-drink'}, 
+				{word : 'Sweets'}]
 
 			}, 
 			{
@@ -25,11 +25,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 				nameForLogging : 'Fruit', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {word : 'Banana'}, 
+				  	{word : 'Banana'}, 
 					{word : 'Apple'}, 
 					{word : 'Strawberry'}, 
-                    {word : 'Mango'}, 
-					{word : 'Oranges'}]
+                  			{word : 'Mango'},
+					{word : 'Vegetables'},
+					{word : 'Lettuce'},
+					{word : 'Salad'},
+					{word : 'Broccoli'}]
 			}
 		],
 
