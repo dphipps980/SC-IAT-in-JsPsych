@@ -1,0 +1,40 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
+    var API = new APIConstructor();
+
+	return iatExtension({
+		category1 : {
+			name : 'Physical Activity', //Will appear in the data.
+			title : {
+				media : {word : 'Physical Activity'}, //Name of the category presented in the task.
+				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+    		    {word: 'running'},{word: 'exercise'},{word: 'workout'},{word: 'jogging'}
+			], 
+			//Stimulus css (style)
+			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+		},	
+		category2 :	{
+			name : 'Sedentary', //Will appear in the data.
+			title : {
+				media : {word : 'Sedentary'}, //Name of the category presented in the task.
+				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+    		    {word: 'sitting'},{word: 'tv'},{word: 'couch'},{word: 'lying down'}			], 
+			//Stimulus css
+			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+		},	
+
+		base_url : {//Where are your images at?
+			image : 'https://baranan.github.io/minno-tasks/images/'
+		} 
+		showDebriefing:false,
+		preDebriefingText : 'Press space to see your result',
+		preDebriefingTouchText : 'Touch the bottom green area to see your result', 
+		debriefingTextTop : 'Your result:', 
+		debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.', //Will be shown below the feedback text. 
+	});
+});
