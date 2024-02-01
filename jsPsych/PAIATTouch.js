@@ -10,7 +10,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {word: 'running'},{word: 'exercise'},{word: 'workout'},{word: 'jogging'},{word: 'jump'},{word: 'sprint'}
+    		    {word: 'running'},{word: 'exercise'},{word: 'workout'},{word: 'jogging'},{word: 'jumping'},{word: 'sprint'},{word: 'active'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
