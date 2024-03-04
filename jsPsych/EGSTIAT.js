@@ -62,7 +62,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			},
 
   base_url : {//Where are your images at?
-    image : 'https://baranan.github.io/minno-tasks/images/'
+    image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/'
   }}
   );
   });
