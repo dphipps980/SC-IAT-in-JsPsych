@@ -10,13 +10,13 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 			media : [ //Stimuli
-			{image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Monster.jpeg'},
-			{image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Mother.jpg'},
-			{image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Redbull.jpg'},
-			{image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/RedBullSF.jpeg'},
-            {image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Rockstar.jpg'},
-            {image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V.jpeg'},
-            {image: 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V2.jpg'}
+			{image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Monster.jpeg'},
+			{image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Mother.jpg'},
+			{image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Redbull.jpg'},
+			{image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/RedBullSF.jpeg'},
+            {image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Rockstar.jpg'},
+            {image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V.jpeg'},
+            {image : 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V2.jpg'}
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
