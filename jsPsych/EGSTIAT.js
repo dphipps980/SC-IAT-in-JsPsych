@@ -15,7 +15,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			{image: https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Redbull.jpg},
 			{image: https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/RedBullSF.jpeg},
             {image: https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/Rockstar.jpg},
-            {image: https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V.jpg},
+            {image: https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V.jpeg},
             {image: https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/Images/V2.jpg}
 		    ], 
 		    //Stimulus css (style)
