@@ -6,14 +6,14 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
 			name : 'Physical Activity', //Will appear in the data.
 			title : {
 				media : {word : 'Physical Activity'}, //Name of the category presented in the task.
-				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
+				css : {color:'#000000','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
     		    {word: 'running'},{word: 'exercise'},{word: 'workout'},{word: 'jogging'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#000000','font-size':'2em'}
 		},	
 		category2 :	{
 			name : 'Sedentary', //Will appear in the data.
