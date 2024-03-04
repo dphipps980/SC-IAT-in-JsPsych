@@ -10,10 +10,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'school'}, 
-    			{image : 'class'}, 
-    			{image : 'learning'}, 
-    			{image : 'class'}
+    		    {word : 'school'}, 
+    			{word : 'class'}, 
+    			{word : 'learning'}, 
+    			{word : 'class'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
@@ -26,10 +26,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'sport'}, 
-    			{image : 'training'}, 
-    			{image : 'exercise'}, 
-    			{image : 'coaching'}], 
+    		    {word : 'sport'}, 
+    			{word : 'training'}, 
+    			{word : 'exercise'}, 
+    			{word : 'coaching'}], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
