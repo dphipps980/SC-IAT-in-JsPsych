@@ -10,14 +10,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
-    		    	{image : 'P1.png'}, 
-    			{image : 'P2.png'}, 
-    			{image : 'P3.png'}, 
-    			{image : 'P4.png'}, 
-    			{image : 'P5.png'}, 
-    			{image : 'P6.png'},
-				{image : 'P7.png'},
-				{image : 'P8.png'}
+    		    	{image : 'P1.jpg'}, 
+    			{image : 'P2.jpg'}, 
+    			{image : 'P3.jpg'}, 
+    			{image : 'P4.jpg'}, 
+    			{image : 'P5.jpg'}, 
+    			{image : 'P6.jpg'},
+				{image : 'P7.jpg'},
+				{image : 'P8.jpg'}
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
