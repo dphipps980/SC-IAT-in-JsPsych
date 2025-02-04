@@ -143,7 +143,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Näpäytä näppäimistön <b>I näppäintä</b>, jos kiinalainen merkki on keskivertoa Miellyttävämpi.' + 
-			'Näpäytä näppäimistön <b>E näppäintä</b>, jos se on keskivertoa Epämiellyttävämpi.' + 
+			'Näpäytä näppäimistön <b>E näppäintä</b>, jos se on keskivertoa Epämiellyttävämpi.<br/><br/>' + 
 			'Testin elementit ilmestyvät ja häviävät nopeasti.  ' + 
 			'Älä kiinnitä huomiota kiinalaista merkkiä edeltävään sanaan,  arvioi ainoastaan kiinalainen merkki.<br/><br/></p>'+
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
