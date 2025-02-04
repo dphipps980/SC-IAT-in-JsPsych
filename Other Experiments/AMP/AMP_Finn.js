@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experiments/AMPs/qamp_Finn_Desktop.js'], function(APIConstructor, ampExtension){
+define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experiments/AMP/qamp_Finn_Desktop.js'], function(APIConstructor, ampExtension){
 
 	var API = new APIConstructor();
 	
