@@ -104,8 +104,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Miellyttävämpi', //Response is coded as 0. 
-			sortingLabel2 : 'Epämiellyttävämpi',  //Response is coded as 1.
+			sortingLabel1 : 'miellyttävä', //Response is coded as 0. 
+			sortingLabel2 : 'epämiellyttävä',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -227,7 +227,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the task<br/><br/>Press "space" to continue to next task.</p></div>', 
+			'Olet suorittanut testin loppuun<br/><br/>Paina välilyöntiä jatkaaksesi seuraavaan tehtävään</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
