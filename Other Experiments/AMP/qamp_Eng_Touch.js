@@ -441,8 +441,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 						//Add keyboard input
 						{type:'setInput',input:{handle:leftSortingLabel,on: 'keypressed', key:piCurrent.leftKey}},
 						{type:'setInput',input:{handle:rightSortingLabel,on: 'keypressed', key:piCurrent.rightKey}},
-						{type:'setInput',input:{handle:leftSortingLabel,on:'leftTouch',touch:true}},
-                        {type:'setInput',input:{handle:rightSortingLabel,on:'rightTouch',touch:true}},
+						{type:'setInput',input:{handle:leftSortingLabel,on:'leftTouch'}},
+                        {type:'setInput',input:{handle:rightSortingLabel,on:'rightTouch'}},
 						//Deadline for the display of the target
 						{type:'trigger',handle:'targetOut',duration:'<%=trialData.targetDuration%>'}
 					]
@@ -822,7 +822,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: layout,
 			input: [
 				{handle:'space',on:'space'}, //Will handle a SPACEBAR response
-				{handle:'space',on:'bottomTouch',touch:true}
+				{handle:'space',on:'bottomTouch'}
 			],
 			interactions: [
 				{ // begin trial
