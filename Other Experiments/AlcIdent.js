@@ -13,7 +13,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
     		    {word: 'drinker'},{word: 'partier'},{word: 'drunk'},{word: 'drink'}
 			], 
 			//Stimulus css (style)
-			stimulusCss : {color:'#000000','font-size':'2em'}
+			stimulusCss : {color:'#31940F','font-size':'2em'}
 		},	
 		category2 :	{
 			name : 'Non-drinker', //Will appear in the data.
