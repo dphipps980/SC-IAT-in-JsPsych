@@ -29,7 +29,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				borderColor: 'lightblue'
 			}, 
 			//The CSS for all the prime stimuli.
-			primeStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			primeStimulusCSS : {color:'#0000FF','font-size':'3em'},
 			//The prime categories.
 			primeCats :  [
 				{
@@ -94,12 +94,12 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			//The mask stimulus in the example block
 			exampleMaskStimulus : {
-				css : {color:'000000', 'font-size':'3em'}, 
+				css : {color:'000000', 'font-size':'3em', 'max-width':'20vw', 'height':'auto'}, 
 				media : {image:'ampmaskr.jpg'}
 			}, 
 			//The mask stimulus 
 			maskStimulus : {
-				css : {color:'000000', 'font-size':'3em'}, 
+				css : {color:'000000', 'font-size':'3em', 'max-width':'20vw', 'height':'auto'}, 
 				media : {image:'ampmask.jpg'}
 			}, 
 			
