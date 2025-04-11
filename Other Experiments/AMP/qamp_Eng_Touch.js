@@ -51,7 +51,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				mediaArray : [{word : 'Table'}, {word : 'Chair'}]
 			},
 			//The CSS for all the target stimuli (usually irrelevant because the targets are Chinese pictographs.
-			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em', 'max-width':'40vw', 'height':'auto'},
+			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em', 'max-width':'50vw', 'height':'auto'},
 			//The prime categories.
 			targetCats :  [
 				{
@@ -94,12 +94,12 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			//The mask stimulus in the example block
 			exampleMaskStimulus : {
-				css : {color:'000000', 'font-size':'3em', 'max-width':'40vw', 'height':'auto'}, 
+				css : {color:'000000', 'font-size':'3em', 'max-width':'50vw', 'height':'auto'}, 
 				media : {image:'ampmaskr.jpg'}
 			}, 
 			//The mask stimulus 
 			maskStimulus : {
-				css : {color:'000000', 'font-size':'3em', 'max-width':'40vw', 'height':'auto'}, 
+				css : {color:'000000', 'font-size':'3em', 'max-width':'50vw', 'height':'auto'}, 
 				media : {image:'ampmask.jpg'}
 			}, 
 			
