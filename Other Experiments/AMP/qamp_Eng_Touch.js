@@ -142,8 +142,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:12px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Tap the RIGHT side of your screen the Chinese symbol is more Pleasant than average ' + 
-			'Tap the LEFT side of your screen if it is more Unpleasant than average.<br/><br/>' + 
+			'Tap the <b>RIGHT</b> side of your screen the Chinese symbol is more Pleasant than average. <br/>' + 
+			'Tap the <b>LEFT</b> side of your screen if it is more Unpleasant than average.<br/><br/>' + 
 			'The items appear and disappear quickly.  ' + 
 			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
 			'<p style="font-size:12px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
@@ -155,13 +155,13 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Go with your gut feelings.<br/><br/>' + 
 			'Concentrate on each targetCat and rate it as more rightAttribute than the average targetCat by tapping the RIGHT side of your screen, ' + 
 			'or more leftAttribute than average by tapping the LEFT side of your screen.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'<b>Evaluate each targetCat and not the item that appears before it.</b> ' + 
 			'Those items are sometimes distracting.<br/><br/>' + 
-			'<p style="font-size:14px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>Green Box</b>.</p>' + 
 			'<p style="font-size:10px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 2 of nBlocks]</p></div>',
-			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			middleBlockInst : '<div><p style="font-size:12px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Continue to another round of this task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			'Concentrate on the targetCat and rate it as more rightAttribute than average by tapping the RIGHT side of your screen, ' + 
@@ -172,7 +172,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Ready? Hit the <b>green box</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
-			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
+			lastBlockInst : '<div><p style="font-size:12px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			'Concentrate on the targetCat and rate it as more rightAttribute than average by tapping the RIGHT side of your screen, ' + 
