@@ -142,45 +142,45 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:12px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Press the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
-			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
+			'Tap the RIGHT side of your screen the Chinese symbol is more Pleasant than average ' + 
+			'Tap the LEFT side of your screen if it is more Unpleasant than average.<br/><br/>' + 
 			'The items appear and disappear quickly.  ' + 
 			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
 			'<p style="font-size:12px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
+			'When you are ready to try a few practice responses, hit the <b>green box</b>.</p>' + 
 			'<p style="font-size:10px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:12px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"See how fast it is? Don't worry if you miss some. " + 
 			'Go with your gut feelings.<br/><br/>' + 
-			'Concentrate on each targetCat and rate it as more rightAttribute than the average targetCat with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
+			'Concentrate on each targetCat and rate it as more rightAttribute than the average targetCat by tapping the RIGHT side of your screen, ' + 
+			'or more leftAttribute than average by tapping the LEFT side of your screen.<br/><br/>' + 
 			'Evaluate each targetCat and not the item that appears before it. ' + 
 			'Those items are sometimes distracting.<br/><br/>' + 
 			'<p style="font-size:14px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Ready? Hit the <b>space bar</b>.</p>' + 
+			'Ready? Hit the <b>Green Box</b>.</p>' + 
 			'<p style="font-size:10px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 2 of nBlocks]</p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Continue to another round of this task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Concentrate on the targetCat and rate it as more rightAttribute than average by tapping the RIGHT side of your screen, ' + 
+			'or more leftAttribute than average by tapping the LEFT side of your screen.<br/><br/>' + 
+			'Evaluate each targetCat and not the item that appears before it.' + 
 			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Ready? Hit the <b>space bar</b>.</p>' + 
+			'Ready? Hit the <b>green box</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
+			'Concentrate on the targetCat and rate it as more rightAttribute than average by tapping the RIGHT side of your screen, ' + 
+			'or more leftAttribute than average by tapping the LEFT side of your screen.<br/><br/>' + 
 			'Evaluate each targetCat and not the item that appears before it. ' + 
 			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
-			'Ready? Hit the <b>space bar</b>.</p>' + 
+			'Ready? Hit the <b>Green Box</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
@@ -227,7 +227,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the task<br/><br/>Press "space" to continue to next task.</p></div>', 
+			'You have completed the task<br/><br/>Tap to continue to next task.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
