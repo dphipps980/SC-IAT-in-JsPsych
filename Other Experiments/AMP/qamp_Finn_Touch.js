@@ -104,8 +104,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'miellyttävä', //Response is coded as 0. 
-			sortingLabel2 : 'epämiellyttävä',  //Response is coded as 1.
+			sortingLabel1 : 'Miellyttävä', //Response is coded as 0. 
+			sortingLabel2 : 'Epämiellyttävä',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -144,8 +144,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlockInst: '<div><p style="font-size:12px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Näpäytä näyttösi OIKEAA puolta, jos kiinalainen merkki on keskivertoa Miellyttävämpi <br/>' + 
 			'Näpäytä näyttösi VASENTA puolta, jos se on keskivertoa Epämiellyttävämpi.<br/><br/>' + 
-			'Testin elementit ilmestyvät ja häviävät nopeast.  ' + 
-			'Älä kiinnitä huomiota kiinalaista merkkiä edeltävään sanaan, arvioi ainoastaan kiinalainen merkki.<br/><br/></p>'  + 
+			'Testin elementit ilmestyvät ja häviävät nopeasti.  ' + 
+			'Älä kiinnitä huomiota kiinalaista merkkiä edeltävään elementtiin, arvioi ainoastaan kiinalainen merkki.<br/><br/></p>'  + 
 			'<p style="font-size:12px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Paina tästä, kun olet valmis harjoittelemaan.</p>' + 
 			'<p style="font-size:10px; text-align:center; font-family:arial">' + 
@@ -155,8 +155,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Seuraa vaistoasi vastatessasi.<br/><br/>' + 
 			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näyttösi oikeaa puolta, ' + 
 			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näyttösi vasenta puolta.<br/><br/>' + 
-			'<b>Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää sanaa.</b> ' + 
-			'Nämä sanat voivat joskus olla häiritseviä.<br/><br/>' + 
+			'<b>Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää elementtiä.</b> ' + 
+			'Nämä elementit voivat joskus olla häiritseviä.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Valmiina? Paina tästä aloittaaksesi.</p>' + 
 			'<p style="font-size:10px; text-align:center; font-family:arial">' + 
@@ -166,8 +166,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Säännöt ovat samat kuin aiemmin:<br/><br/>' + 
 			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näyttösi oikeaa puolta, ' + 
 			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näyttösi vasenta puolta.<br/><br/>' + 
-			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää sanaa.' + 
-			'Nämä sanat voivat joskus olla häiritseviä.<br/><br/>' + 
+			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää elementtiä.' + 
+			'Nämä elementit  voivat joskus olla häiritseviä.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Valmiina? Paina tästä aloittaaksesi.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -177,8 +177,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Säännöt ovat samat kuin aiemmin:<br/><br/>' + 
 			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näyttösi oikeaa puolta, ' + 
 			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näyttösi vasenta puolta.<br/><br/>' + 
-			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää sanaa.' + 
-			'Nämä sanat voivat joskus olla häiritseviä.<br/><br/>' + 
+			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää elementtiä.' + 
+			'Nämä elementit voivat joskus olla häiritseviä.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Valmiina? Paina tästä aloittaaksesi.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -227,7 +227,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'Olet suorittanut tehtävän loppuu.</p></div>', 
+			'Olet suorittanut tehtävän loppuun.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 

@@ -10,13 +10,11 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experi
 				nameForLogging : 'Physical Activity', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {word : 'exercise'}, 
-					{word : 'workout'}, 
-					{word : 'running'}, 
-					{word : 'moving'}, 
-					{word : 'active'}, 
-					{word : 'sport'}, 
-					{word : 'physical activity'}]
+				    {word : 'Exercise'}, 
+					{word : 'Workout'}, 
+					{word : 'Running'}, 
+					{word : 'Moving'}, 
+					{word : 'Physical Activity'}]
 
 			}, 
 			{
@@ -24,11 +22,11 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experi
 				nameForLogging : 'Sedentary Behaviour', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {word : 'resting'}, 
-					{word : 'sitting'}, 
-					{word : 'lying down'}, 
-					{word : 'chair'}, 
-					{word : 'couch'}]
+				    {word : 'Resting'}, 
+					{word : 'Sitting'}, 
+					{word : 'Lying Down'}, 
+					{word : 'Chair'}, 
+					{word : 'Couch'}]
 			}
 		],
 

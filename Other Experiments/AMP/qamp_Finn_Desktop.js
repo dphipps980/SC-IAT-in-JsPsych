@@ -104,8 +104,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'miellyttävä', //Response is coded as 0. 
-			sortingLabel2 : 'epämiellyttävä',  //Response is coded as 1.
+			sortingLabel1 : 'Miellyttävä', //Response is coded as 0. 
+			sortingLabel2 : 'Epämiellyttävä',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -142,10 +142,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'Näpäytä näppäimistön <b>I näppäintä</b>, jos kiinalainen merkki on keskivertoa Miellyttävämpi.' + 
-			'Näpäytä näppäimistön <b>E näppäintä</b>, jos se on keskivertoa Epämiellyttävämpi.<br/><br/>' + 
+			'Näpäytä näppäimistön <b>I-näppäintä</b>, jos kiinalainen merkki on keskivertoa Miellyttävämpi.' + 
+			'Näpäytä näppäimistön <b>E-näppäintä</b>, jos se on keskivertoa Epämiellyttävämpi.<br/><br/>' + 
 			'Testin elementit ilmestyvät ja häviävät nopeasti.  ' + 
-			'Älä kiinnitä huomiota kiinalaista merkkiä edeltävään sanaan,  arvioi ainoastaan kiinalainen merkki.<br/><br/></p>'+
+			'Älä kiinnitä huomiota kiinalaista merkkiä edeltävään elementtiin,  arvioi ainoastaan kiinalainen merkki.<br/><br/></p>'+
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Kun olet valmis harjoittelemaan, <b>paina välilyöntiä aloittaaksesi</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -153,10 +153,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			"Huomaatko miten nopea tehtävä on? Ei haittaa, vaikka et ehdi vastata kaikkiin. " + 
 			'Seuraa vaistoasi vastatessasi<br/><br/>' + 
-			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näppäimistösi <b>I näppäintä</b>,'+
-			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näppäimistösi <b>E näppäintä</b><br/><br/>'+
-			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää sanaa. ' + 
-			'Nämä sanat  voivat joskus olla häiritseviä.<br/><br/>' + 
+			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näppäimistösi <b>I-näppäintä</b>,'+
+			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näppäimistösi <b>E-näppäintä</b><br/><br/>'+
+			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää elementtiä. ' + 
+			'Nämä elementit voivat joskus olla häiritseviä.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Valmiina? <b>Paina välilyöntiä aloittaaksesi</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -164,10 +164,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Jatka tehtävän toiselle kierrokselle. ' + 
 			'Säännöt ovat samat kuin aiemmin:<br/><br/>' + 
-			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näppäimistösi <b>I näppäintä</b>,'+
-			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näppäimistösi <b>E näppäintä</b><br/><br/>'+
-			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää sanaa. ' + 
-			'Nämä sanat  voivat joskus olla häiritseviä. Seuraa vaistoasi vastatessasi. <br/><br/>' + 
+			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näppäimistösi <b>I-näppäintä</b>,'+
+			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näppäimistösi <b>E-näppäintä</b><br/><br/>'+
+			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää elementtiä. ' + 
+			'Nämä elementit voivat joskus olla häiritseviä. Seuraa vaistoasi vastatessasi. <br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Valmiina? <b>Paina välilyöntiä aloittaaksesi</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -175,10 +175,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
 			'Oletko valmiina VIIMEISEEN kierrokseen? ' + 
 			'Säännöt ovat samat kuin aiemmin:<br/><br/>' + 
-			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näppäimistösi <b>I näppäintä</b>,'+
-			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näppäimistösi <b>E näppäintä</b><br/><br/>'+
-			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää sanaa. ' + 
-			'Nämä sanat  voivat joskus olla häiritseviä. Seuraa vaistoasi vastatessasi. <br/><br/>' + 
+			'Keskity jokaiseen kiinalaiseen merkkiin ja arvioi se keskiverto kiinalaista merkkiä Miellyttävämmäksi näpäyttämällä näppäimistösi <b>I-näppäintä</b>,'+
+			'tai keskiverto kiinalaista merkkiä Epämiellyttävämmäksi näpäyttämällä näppäimistösi <b>E-näppäintä</b><br/><br/>'+
+			'Arvioi jokainen kiinalainen merkki, älä sitä ennen ilmestyvää elementtiä. ' + 
+			'Nämä elementit voivat joskus olla häiritseviä. Seuraa vaistoasi vastatessasi. <br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Valmiina? <b>Paina välilyöntiä aloittaaksesi</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 

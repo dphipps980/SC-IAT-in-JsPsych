@@ -11,7 +11,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experi
 				//An array of all media objects for this category.
 				mediaArray : [
 				    {word : 'Liikunta'}, 
-					{word : 'juoksu'}, 
+					{word : 'Juoksu'}, 
 					{word : 'Treeni'}, 
 					{word : 'Fyysinen aktiivisuus'}, 
 					{word : 'Liikkuminen'}]
@@ -26,7 +26,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experi
 					{word : 'Istuminen'}, 
 					{word : 'Tuoli'},
 					{word : 'Sohva'},
-					{word : 'makaaminen'}]
+					{word : 'Makaaminen'}]
 			}
 		],
 
