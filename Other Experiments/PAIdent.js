@@ -10,7 +10,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {word: 'Unhealthy'},{word: 'Ill-health'},{word: 'Lethargy'},{word: 'Poorly'},{word: 'Inactive'},{word: 'Sickly'},{word: 'Impaired'},{word: 'Diminished'}
+    		    {word: 'Sit'},{word: 'Rest'},{word: 'Watch TV'},{word: 'Snooze'},{word: 'Recline'},{word: 'Lie Down'}
 			], 
 			//Stimulus css (style)
 			stimulusCss : {color:'#31940F','font-size':'2em'}
@@ -23,7 +23,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {word: 'Healthy'},{word: 'Wellness'},{word: 'Energetic'},{word: 'Vitality'},{word: 'Active'},{word: 'Fitness'},{word: 'Vigor'},{word: 'Longevity'}
+    		    {word: 'Lift Weights'},{word: 'Run'},{word: 'Jump'},{word: 'Workout'},{word: 'Aerobics'},{word: 'Crosstraining'}
 			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
