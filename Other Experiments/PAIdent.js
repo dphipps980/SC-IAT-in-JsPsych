@@ -3,7 +3,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
 
 	return iatExtension({
 		category1 : {
-			name : 'Unhealthy', //Will appear in the data.
+			name : 'Sedentary', //Will appear in the data.
 			title : {
 				media : {word : 'Unhealthy'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -16,7 +16,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/jsPsych/IATAPI
 			stimulusCss : {color:'#31940F','font-size':'2em'}
 		},	
 		category2 :	{
-			name : 'Healthy', //Will appear in the data.
+			name : 'Exerciser', //Will appear in the data.
 			title : {
 				media : {word : 'Healthy'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
