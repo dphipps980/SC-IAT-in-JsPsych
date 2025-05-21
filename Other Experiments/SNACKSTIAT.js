@@ -3,18 +3,18 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 	var API = new APIConstructor();
 		  return stiatExtension({
 		  category : { 
-		    name : 'Physical Activity', //Will appear in the data.
+		    name : 'Snacking', //Will appear in the data.
 		    title : {
-		      media : {word : 'Physical Activity'}, //Name of the category presented in the task.
+		      media : {word : 'Snacking'}, //Name of the category presented in the task.
 		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 			media : [ //Stimuli
-			{word: 'Exercise'},
-			{word: 'Sport'},
-			{word: 'Workout'},
-			{word: 'Run'},
-			{word: 'Fitness'}
+			{word: 'Snacks'},
+			{word: 'Snacking'},
+			{word: 'Food'},
+			{word: 'Chocolate'},
+			{word: 'Eating'}
 		    ], 
 		    //Stimulus css (style)
 		    css : {color:'#31b404','font-size':'3em'}
