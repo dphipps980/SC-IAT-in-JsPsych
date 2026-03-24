@@ -3,6 +3,7 @@ define(['pipAPI', 'https://dphipps980.github.io/SC-IAT-in-JsPsych/Other%20Experi
 	var API = new APIConstructor();
 
 	return ampExtension({
+		primeDuration : 75,
 		primeCats : [
 			{
 				nameForFeedback : 'Vaping',
